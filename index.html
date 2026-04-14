@@ -614,130 +614,97 @@
   <div class="container">
     <div class="header-inner">
       <div class="logo-block">
-        <div class="logo-img" style="background:transparent; padding:0; width:auto; height:auto; border-radius:0; font-size:0;">
-          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="72" height="72" style="display:none">
-            <defs>
-              <clipPath id="cc"><circle cx="40" cy="40" r="31"/></clipPath>
-            </defs>
-            <circle cx="40" cy="40" r="39" fill="#1e3060"/>
-            <circle cx="40" cy="40" r="36" fill="white"/>
-            <circle cx="40" cy="40" r="33" fill="#ff8c20"/>
-
-            <g clip-path="url(#cc)">
-              <!-- горы на фоне (светлее оранжевого) -->
-              <polygon points="14,58 28,36 42,58" fill="#e07010" opacity="0.55"/>
-              <polygon points="34,58 52,28 70,58" fill="#cc6a00" opacity="0.55"/>
-
-              <!-- ===== БУЛЬДОЗЕР (тёмно-синий) ===== -->
-              <!-- гусеница -->
-              <path d="M10 60 L10 52 L18 46 L64 46 L70 52 L70 60 Z" fill="#1e3060"/>
-              <rect x="12" y="54" width="56" height="4" rx="2" fill="#1e3060"/>
-              <!-- звёздочки гусеницы -->
-              <circle cx="16" cy="56" r="4" fill="#ff8c20"/>
-              <circle cx="16" cy="56" r="1.8" fill="#1e3060"/>
-              <circle cx="64" cy="56" r="4" fill="#ff8c20"/>
-              <circle cx="64" cy="56" r="1.8" fill="#1e3060"/>
-
-              <!-- корпус -->
-              <rect x="26" y="34" width="38" height="14" rx="2" fill="#1e3060"/>
-
-              <!-- кабина -->
-              <rect x="38" y="20" width="24" height="16" rx="2" fill="#1e3060"/>
-              <!-- стёкла кабины -->
-              <rect x="40" y="22" width="9" height="11" rx="1" fill="white" opacity="0.85"/>
-              <rect x="51" y="22" width="8" height="11" rx="1" fill="white" opacity="0.85"/>
-
-              <!-- выхлопная труба -->
-              <rect x="44" y="13" width="5" height="9" rx="2" fill="#1e3060"/>
-              <ellipse cx="46" cy="13" rx="3.5" ry="2" fill="#1e3060"/>
-
-              <!-- стрела ковша -->
-              <path d="M26 38 L12 26 L10 31 L24 43 Z" fill="#1e3060"/>
-              <!-- вторая стойка -->
-              <path d="M28 34 L16 22 L14 26 L26 38 Z" fill="#1e3060"/>
-
-              <!-- ковш (поднят) -->
-              <path d="M6 20 L4 30 L20 36 L24 26 Z" fill="#1e3060"/>
-              <!-- режущая кромка ковша -->
-              <path d="M4 30 L2 36 L22 40 L20 36 Z" fill="#1e3060"/>
-              <!-- зубья ковша -->
-              <rect x="5"  y="36" width="3" height="5" rx="1" fill="#1e3060"/>
-              <rect x="10" y="37" width="3" height="5" rx="1" fill="#1e3060"/>
-              <rect x="15" y="38" width="3" height="5" rx="1" fill="#1e3060"/>
-            </g>
-          </svg>
-        </div>
         <div class="logo-text-block" style="display:none">
           <div class="logo-title">Стойленский <span>карьер</span></div>
           <div class="logo-sub">Нерудные материалы от производителя</div>
         </div>
-        <!-- FENTON-STYLE LOGO -->
-        <svg viewBox="0 0 300 90" xmlns="http://www.w3.org/2000/svg" width="300" height="90">
-          <defs>
-            <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%"   stop-color="#ffc050"/>
-              <stop offset="45%"  stop-color="#ff8c20"/>
-              <stop offset="100%" stop-color="#b84a00"/>
-            </linearGradient>
-          </defs>
+        <!-- LOGO: самосвал + экскаватор -->
+        <svg viewBox="0 0 260 118" xmlns="http://www.w3.org/2000/svg" width="260" height="118">
 
-          <!-- фон -->
-          <rect width="300" height="90" rx="8" fill="#0e0e0e"/>
-          <rect width="300" height="90" rx="8" fill="none" stroke="#ff8c20" stroke-width="1.5" opacity="0.7"/>
+          <!-- белый фон -->
+          <rect width="260" height="118" fill="white"/>
 
-          <!-- ══════ ЭКСКАВАТОР ══════ -->
-          <!-- гусеница -->
-          <rect x="5"  y="64" width="56" height="14" rx="7" fill="#ff8c20"/>
-          <rect x="8"  y="62" width="50" height="10" rx="4" fill="#bb5e00"/>
-          <circle cx="12" cy="70" r="6" fill="#ff8c20"/><circle cx="12" cy="70" r="2.5" fill="#0e0e0e"/>
-          <circle cx="55" cy="70" r="6" fill="#ff8c20"/><circle cx="55" cy="70" r="2.5" fill="#0e0e0e"/>
+          <!-- ══ ДЕРЕВЬЯ (тёмный силуэт, фон) ══ -->
+          <polygon points="118,84 126,58 134,84" fill="#1a1a1a"/>
+          <polygon points="126,84 136,46 146,84" fill="#222"/>
+          <polygon points="136,84 144,62 152,84" fill="#1a1a1a"/>
+          <rect x="129" y="82" width="4" height="5" fill="#333"/>
+          <rect x="139" y="82" width="4" height="5" fill="#333"/>
+
+          <!-- ══════ САМОСВАЛ (левая часть, серо-белый) ══════ -->
+          <!-- кузов (главный элемент) -->
+          <rect x="50" y="30" width="98" height="56" rx="2" fill="white" stroke="#222" stroke-width="2.5"/>
+          <!-- верхняя кромка кузова -->
+          <path d="M50 30 L54 22 L148 22 L148 30 Z" fill="#ddd" stroke="#222" stroke-width="2"/>
+          <!-- содержимое кузова (щебень) -->
+          <path d="M52 84 L60 62 L74 72 L90 58 L106 68 L122 55 L138 66 L146 84 Z" fill="#bbb"/>
+          <!-- кабина -->
+          <rect x="4"  y="52" width="50" height="32" rx="3" fill="white" stroke="#222" stroke-width="2.5"/>
+          <path d="M4 52 L4 36 L18 24 L52 24 L52 52 Z" fill="white" stroke="#222" stroke-width="2.5"/>
+          <!-- лобовое стекло -->
+          <path d="M20 26 L50 26 L50 50 L20 50 Z" fill="#cce8ff" stroke="#444" stroke-width="1.2"/>
+          <!-- боковое окно -->
+          <rect x="6" y="54" width="18" height="14" rx="1" fill="#cce8ff" stroke="#444" stroke-width="1"/>
+          <!-- решётка -->
+          <rect x="4" y="66" width="16" height="10" rx="1" fill="#ddd" stroke="#888" stroke-width="1"/>
+          <!-- фара -->
+          <rect x="5" y="54" width="9" height="7" rx="1" fill="#fffacc" stroke="#aaa" stroke-width="0.8"/>
+          <!-- бампер -->
+          <rect x="2" y="78" width="52" height="6" rx="2" fill="#ccc" stroke="#888" stroke-width="1"/>
+          <!-- выхлоп -->
+          <rect x="20" y="12" width="7" height="14" rx="3" fill="#888"/>
+          <!-- ходовые огни на крыше -->
+          <rect x="24" y="23" width="24" height="4" rx="2" fill="#ddd" stroke="#aaa" stroke-width="0.8"/>
+
+          <!-- колёса самосвала -->
+          <circle cx="32"  cy="90" r="13" fill="#222"/><circle cx="32"  cy="90" r="8" fill="#555"/><circle cx="32"  cy="90" r="4" fill="#888"/>
+          <circle cx="112" cy="90" r="13" fill="#222"/><circle cx="112" cy="90" r="8" fill="#555"/><circle cx="112" cy="90" r="4" fill="#888"/>
+          <circle cx="134" cy="90" r="13" fill="#222"/><circle cx="134" cy="90" r="8" fill="#555"/><circle cx="134" cy="90" r="4" fill="#888"/>
+
+          <!-- ══════ ЭКСКАВАТОР (правая часть, оранжевый) ══════ -->
+          <!-- гусеницы -->
+          <path d="M152 82 L153 74 L159 68 L246 68 L252 74 L252 82 Z" fill="#ff8c20"/>
+          <rect x="155" y="75" width="94" height="7" rx="3" fill="#cc6000"/>
+          <circle cx="158" cy="78" r="6" fill="#ff8c20"/><circle cx="158" cy="78" r="2.5" fill="#1a1a1a"/>
+          <circle cx="247" cy="78" r="6" fill="#ff8c20"/><circle cx="247" cy="78" r="2.5" fill="#1a1a1a"/>
 
           <!-- корпус -->
-          <rect x="10" y="46" width="42" height="20" rx="2" fill="#ff8c20"/>
+          <rect x="162" y="50" width="72" height="20" rx="2" fill="#ff8c20"/>
           <!-- кабина -->
-          <path d="M13 46 L13 30 L44 30 L50 46 Z" fill="#bb5e00"/>
+          <path d="M176 50 L176 32 L238 32 L244 50 Z" fill="#cc6000"/>
           <!-- окна -->
-          <rect x="15" y="32" width="13" height="11" rx="1" fill="#aad4f5"/>
-          <rect x="30" y="32" width="11" height="11" rx="1" fill="#aad4f5"/>
-          <!-- труба -->
-          <rect x="17" y="22" width="6" height="10" rx="3" fill="#bb5e00"/>
+          <rect x="179" y="34" width="20" height="13" rx="1" fill="#cce8ff"/>
+          <rect x="202" y="34" width="18" height="13" rx="1" fill="#cce8ff"/>
+          <!-- выхлоп -->
+          <rect x="182" y="22" width="7" height="12" rx="3" fill="#cc6000"/>
           <!-- противовес -->
-          <path d="M10 50 L4 50 L4 63 L10 63 Z" fill="#993d00"/>
+          <path d="M162 54 L155 54 L155 68 L162 68 Z" fill="#aa4400"/>
 
-          <!-- ══ СТРЕЛА (от кабины — высоко над текстом — вправо) ══ -->
-          <!-- основная стрела -->
-          <path d="M48 42 L268 5  L270 12 L50 49 Z" fill="#ff8c20"/>
-          <!-- блик -->
-          <path d="M48 42 L268 5 L268 7.5 L48 44.5 Z" fill="#ffd080" opacity="0.35"/>
-          <!-- цилиндр -->
-          <path d="M40 48 L240 18 L241 21 L41 51 Z" fill="#993d00"/>
+          <!-- СТРЕЛА (идёт вверх-влево, ковш над самосвалом) -->
+          <path d="M188 46 L96 8  L98 2  L191 42 Z" fill="#ff8c20"/>
+          <path d="M182 50 L108 20 L109 23 L183 53 Z" fill="#cc6000"/>
           <!-- рукоять -->
-          <path d="M268 8  L286 30 L283 34 L265 12 Z" fill="#ff8c20"/>
+          <path d="M96 7  L74 26 L72 22 L94 3  Z" fill="#ff8c20"/>
           <!-- ковш -->
-          <path d="M282 28 L296 26 L298 40 L280 42 Z" fill="#ff8c20"/>
-          <line x1="283" y1="42" x2="282" y2="48" stroke="#993d00" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="289" y1="42" x2="289" y2="48" stroke="#993d00" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="295" y1="41" x2="295" y2="47" stroke="#993d00" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M70 22 L56 22 L54 36 L72 36 Z" fill="#ff8c20"/>
+          <line x1="57" y1="36" x2="56" y2="42" stroke="#cc6000" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="63" y1="36" x2="63" y2="42" stroke="#cc6000" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="69" y1="36" x2="70" y2="42" stroke="#cc6000" stroke-width="2.5" stroke-linecap="round"/>
 
-          <!-- ══════ ТЕКСТ ══════ -->
-          <!-- СТОЙЛЕНСКИЙ — тень -->
-          <text x="178" y="76"
+          <!-- ══ ЗЕМЛЯ ══ -->
+          <rect x="0" y="100" width="260" height="3" fill="#1a1a1a"/>
+
+          <!-- ══ ТЕКСТ ══ -->
+          <text x="130" y="113"
             font-family="Arial Black, Impact, Arial, sans-serif"
-            font-size="40" font-weight="900" text-anchor="middle"
-            fill="#000" opacity="0.55" dx="2" dy="2">СТОЙЛЕНСКИЙ</text>
-          <!-- СТОЙЛЕНСКИЙ — основной -->
-          <text x="178" y="76"
-            font-family="Arial Black, Impact, Arial, sans-serif"
-            font-size="40" font-weight="900" text-anchor="middle"
-            fill="url(#tg)"
-            stroke="#6e2800" stroke-width="1.2" paint-order="stroke">СТОЙЛЕНСКИЙ</text>
-          <!-- линия -->
-          <line x1="70" y1="80" x2="286" y2="80" stroke="#444" stroke-width="0.8"/>
-          <!-- ГОК -->
-          <text x="178" y="88"
-            font-family="Arial, sans-serif"
-            font-size="9" font-weight="600" text-anchor="middle"
-            letter-spacing="7" fill="#888">Г О К</text>
+            font-size="22" font-weight="900" text-anchor="middle"
+            fill="#111" letter-spacing="1">СТОЙЛЕНСКИЙ</text>
+          <!-- линии + ГОК -->
+          <line x1="18"  y1="116" x2="82"  y2="116" stroke="#ff8c20" stroke-width="1.5"/>
+          <text x="130" y="118"
+            font-family="Arial, sans-serif" font-size="7" font-weight="700"
+            text-anchor="middle" letter-spacing="5" fill="#ff8c20">Г О К</text>
+          <line x1="178" y1="116" x2="242" y2="116" stroke="#ff8c20" stroke-width="1.5"/>
         </svg>
       </div>
 

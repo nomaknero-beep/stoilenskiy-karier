@@ -614,16 +614,13 @@
   <div class="container">
     <div class="header-inner">
       <div class="logo-block">
-        <div class="logo-img" style="background:transparent; padding:0; border-radius:50%;">
-          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+        <div class="logo-img" style="background:transparent; padding:0; width:auto; height:auto; border-radius:0; font-size:0;">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="72" height="72" style="display:none">
             <defs>
               <clipPath id="cc"><circle cx="40" cy="40" r="31"/></clipPath>
             </defs>
-            <!-- внешнее тёмное кольцо -->
             <circle cx="40" cy="40" r="39" fill="#1e3060"/>
-            <!-- белое кольцо -->
             <circle cx="40" cy="40" r="36" fill="white"/>
-            <!-- оранжевый фон -->
             <circle cx="40" cy="40" r="33" fill="#ff8c20"/>
 
             <g clip-path="url(#cc)">
@@ -670,10 +667,87 @@
             </g>
           </svg>
         </div>
-        <div class="logo-text-block">
+        <div class="logo-text-block" style="display:none">
           <div class="logo-title">Стойленский <span>карьер</span></div>
           <div class="logo-sub">Нерудные материалы от производителя</div>
         </div>
+        <!-- FENTON-STYLE LOGO -->
+        <svg viewBox="0 0 270 80" xmlns="http://www.w3.org/2000/svg" width="270" height="80">
+          <defs>
+            <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffb040"/>
+              <stop offset="50%" stop-color="#ff8c20"/>
+              <stop offset="100%" stop-color="#cc5500"/>
+            </linearGradient>
+            <filter id="shadow">
+              <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.6"/>
+            </filter>
+          </defs>
+
+          <!-- тёмный фон -->
+          <rect width="270" height="80" rx="6" fill="#111"/>
+          <!-- тонкая оранжевая рамка -->
+          <rect width="270" height="80" rx="6" fill="none" stroke="#ff8c20" stroke-width="1.5"/>
+
+          <!-- ===== ЭКСКАВАТОР (оранжевый, левая сторона) ===== -->
+          <!-- гусеница -->
+          <rect x="4" y="56" width="52" height="10" rx="5" fill="#ff8c20"/>
+          <rect x="6" y="54" width="48" height="7" rx="3" fill="#cc6500"/>
+          <circle cx="9"  cy="61" r="5" fill="#ff8c20"/><circle cx="9"  cy="61" r="2" fill="#111"/>
+          <circle cx="52" cy="61" r="5" fill="#ff8c20"/><circle cx="52" cy="61" r="2" fill="#111"/>
+          <!-- корпус -->
+          <rect x="7" y="40" width="40" height="17" rx="2" fill="#ff8c20"/>
+          <!-- кабина -->
+          <path d="M10 40 L10 26 L40 26 L46 40 Z" fill="#cc6500"/>
+          <!-- стёкла -->
+          <rect x="12" y="28" width="12" height="10" rx="1" fill="#aaccee"/>
+          <rect x="26" y="28" width="11" height="10" rx="1" fill="#aaccee"/>
+          <!-- выхлоп -->
+          <rect x="14" y="18" width="5" height="10" rx="2" fill="#cc6500"/>
+          <ellipse cx="16" cy="18" rx="3.5" ry="2" fill="#cc6500"/>
+          <!-- противовес -->
+          <path d="M7 44 L2 44 L2 56 L7 56 Z" fill="#aa5500"/>
+
+          <!-- ===== СТРЕЛА (идёт над текстом вправо-вверх) ===== -->
+          <path d="M44 40 L230 6  L232 12 L46 46 Z" fill="#ff8c20" filter="url(#shadow)"/>
+          <!-- блик стрелы -->
+          <path d="M44 40 L230 6 L230 8 L44 42"  fill="#ffb040" opacity="0.4"/>
+          <!-- гидроцилиндр -->
+          <path d="M36 44 L200 16 L201 18 L37 46 Z" fill="#cc6500"/>
+          <!-- рукоять -->
+          <path d="M230 8  L256 28 L254 32 L228 12 Z" fill="#ff8c20"/>
+          <!-- ковш -->
+          <path d="M252 26 L266 26 L268 38 L250 38 Z" fill="#ff8c20"/>
+          <rect x="253" y="38" width="3" height="5" rx="1" fill="#cc6500"/>
+          <rect x="258" y="38" width="3" height="5" rx="1" fill="#cc6500"/>
+          <rect x="263" y="38" width="3" height="5" rx="1" fill="#cc6500"/>
+
+          <!-- ===== ТЕКСТ ===== -->
+          <!-- тень текста -->
+          <text x="137" y="66"
+            font-family="Arial Black, Impact, sans-serif"
+            font-size="36" font-weight="900"
+            text-anchor="middle"
+            fill="#000" opacity="0.5"
+            dx="2" dy="2">СТОЙЛЕНСКИЙ</text>
+          <!-- основной текст -->
+          <text x="137" y="66"
+            font-family="Arial Black, Impact, sans-serif"
+            font-size="36" font-weight="900"
+            text-anchor="middle"
+            fill="url(#textGrad)"
+            stroke="#7a3000" stroke-width="1"
+            paint-order="stroke">СТОЙЛЕНСКИЙ</text>
+          <!-- подпись ГОК -->
+          <text x="137" y="77"
+            font-family="Arial, sans-serif"
+            font-size="10" font-weight="700"
+            text-anchor="middle"
+            letter-spacing="6"
+            fill="#aaa">Г О К</text>
+          <!-- разделительная линия -->
+          <line x1="60" y1="70" x2="214" y2="70" stroke="#555" stroke-width="0.8"/>
+        </svg>
       </div>
 
       <div class="header-cert">

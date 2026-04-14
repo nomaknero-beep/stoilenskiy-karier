@@ -1,0 +1,1518 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стойленский карьер — производство и продажа щебня, песка и нерудных материалов из Старого Оскола. Доставка по всей России. Прямой производитель.">
+  <meta name="keywords" content="щебень купить, щебень Старый Оскол, щебень оптом, нерудные материалы, карьер Стойленский, гранитный щебень, известняковый щебень, песок строительный">
+  <title>Стойленский карьер — производство щебня и нерудных материалов | Старый Оскол</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange:     #ff9c38;
+      --orange-d:   #e07d1a;
+      --brown:      #702b16;
+      --dark:       #1a1a1a;
+      --gray-bg:    #f2f2f2;
+      --gray-mid:   #e4e4e4;
+      --gray-line:  #d0d0d0;
+      --text:       #222222;
+      --text-light: #666666;
+      --white:      #ffffff;
+      --red:        #c40000;
+      --nav-bg:     #3a3a3a;
+      --nav-hover:  #ff9c38;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: var(--text); background: var(--white); line-height: 1.5; }
+    a { color: var(--text); text-decoration: none; }
+    a:hover { color: var(--orange); }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 0 16px; }
+
+    /* ===== TOP BAR ===== */
+    .topbar {
+      background: var(--dark);
+      padding: 6px 0;
+      font-size: 12px;
+    }
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .topbar-left { color: #aaa; }
+    .topbar-right { display: flex; gap: 20px; }
+    .topbar-right a { color: #ccc; font-size: 12px; }
+    .topbar-right a:hover { color: var(--orange); }
+
+    /* ===== HEADER ===== */
+    .header { background: var(--white); border-bottom: 3px solid var(--orange); }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 24px;
+    }
+    .logo-block { display: flex; align-items: center; gap: 16px; }
+    .logo-img {
+      width: 72px; height: 72px;
+      background: var(--orange);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .logo-text-block { }
+    .logo-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+    }
+    .logo-title span { color: var(--orange); }
+    .logo-sub {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header-cert {
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 12px;
+      color: var(--text-light);
+      text-align: center;
+      line-height: 1.4;
+    }
+    .header-cert strong { display: block; color: var(--dark); font-size: 13px; }
+    .header-contacts { text-align: right; }
+    .header-phone {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--dark);
+      display: block;
+      letter-spacing: -0.5px;
+    }
+    .header-phone:hover { color: var(--orange); }
+    .header-phone-free { font-size: 11px; color: var(--orange); font-weight: 700; display: block; }
+    .header-addr { font-size: 12px; color: var(--text-light); margin-top: 3px; }
+    .header-btn {
+      display: inline-block;
+      margin-top: 6px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .header-btn:hover { background: var(--orange-d); color: #fff; }
+
+    /* ===== NAV ===== */
+    .nav { background: var(--nav-bg); position: sticky; top: 0; z-index: 900; }
+    .nav-inner { display: flex; align-items: stretch; }
+    .nav-item { position: relative; }
+    .nav-link {
+      display: block;
+      padding: 14px 18px;
+      color: #e0e0e0;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+      cursor: pointer;
+    }
+    .nav-link:hover, .nav-item:hover > .nav-link { background: var(--orange); color: #fff; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--white);
+      border: 1px solid var(--gray-line);
+      border-top: 3px solid var(--orange);
+      min-width: 220px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .nav-item:hover .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 16px;
+      font-size: 13px;
+      color: var(--text);
+      border-bottom: 1px solid var(--gray-mid);
+      transition: background 0.15s;
+    }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover { background: var(--gray-bg); color: var(--orange); }
+    .nav-cta .nav-link { background: var(--orange); color: #fff; }
+    .nav-cta .nav-link:hover { background: var(--orange-d); }
+    .burger { display: none; padding: 14px 16px; color: #fff; font-size: 22px; cursor: pointer; background: none; border: none; }
+
+    /* ===== SLIDER ===== */
+    .slider { background: #1a1a1a; overflow: hidden; position: relative; }
+    .slides { display: flex; transition: transform 0.5s ease; }
+    .slide {
+      min-width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .slide-bg {
+      position: absolute; inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+    }
+    .slide-content {
+      position: relative;
+      z-index: 1;
+      padding: 0 60px;
+      color: #fff;
+      max-width: 680px;
+    }
+    .slide-label {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
+    .slide-content h2 { font-size: 34px; font-weight: 700; line-height: 1.15; margin-bottom: 12px; letter-spacing: -0.5px; }
+    .slide-content h2 span { color: var(--orange); }
+    .slide-content p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 22px; max-width: 500px; }
+    .slide-btn {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .slide-btn:hover { background: var(--orange-d); color: #fff; }
+    .slide-btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 11px 28px;
+      border-radius: 3px;
+      border: 2px solid rgba(255,255,255,0.5);
+      cursor: pointer;
+      margin-left: 10px;
+      transition: all 0.2s;
+    }
+    .slide-btn-outline:hover { border-color: #fff; color: #fff; }
+    .slider-controls {
+      position: absolute; bottom: 16px; right: 20px;
+      display: flex; gap: 8px; z-index: 2;
+    }
+    .slider-dot {
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: #fff; cursor: pointer;
+      transition: background 0.2s;
+      border-radius: 2px;
+    }
+    .slider-dot.active, .slider-dot:hover { background: var(--orange); border-color: var(--orange); }
+    .slider-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 36px; height: 36px;
+      background: rgba(0,0,0,0.4);
+      border: none; color: #fff; font-size: 18px;
+      cursor: pointer; z-index: 2;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .slider-arrow:hover { background: var(--orange); }
+    .slider-arrow.prev { left: 12px; }
+    .slider-arrow.next { right: 12px; }
+
+    /* ===== SECTION TITLE ===== */
+    .sec { padding: 36px 0; }
+    .sec-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--orange);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sec-title span { font-size: 13px; color: var(--text-light); text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+    /* ===== ABOUT BLOCK ===== */
+    .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 28px; align-items: start; }
+    .about-photo {
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      border-radius: 4px;
+      height: 220px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-size: 64px; gap: 10px;
+      color: var(--text-light);
+    }
+    .about-photo span { font-size: 13px; text-align: center; }
+    .about-text h3 { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .about-text p { font-size: 14px; color: var(--text-light); margin-bottom: 10px; line-height: 1.6; }
+    .about-facts { display: flex; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
+    .about-fact {
+      background: var(--orange);
+      color: #fff;
+      border-radius: 4px;
+      padding: 10px 18px;
+      text-align: center;
+    }
+    .about-fact strong { display: block; font-size: 22px; font-weight: 700; line-height: 1; }
+    .about-fact span { font-size: 11px; opacity: 0.85; }
+
+    /* ===== PRODUCTS GRID ===== */
+    .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .prod-card {
+      border: 1px solid var(--gray-line);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .prod-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: var(--orange); }
+    .prod-img {
+      width: 100%; aspect-ratio: 1/1;
+      background: var(--gray-bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 56px;
+      border-bottom: 1px solid var(--gray-line);
+      position: relative;
+      overflow: hidden;
+    }
+    .prod-img:hover img { transform: scale(1.04); }
+    .prod-badge {
+      position: absolute; top: 8px; left: 8px;
+      background: var(--orange); color: #fff;
+      font-size: 10px; font-weight: 700;
+      padding: 2px 8px; border-radius: 2px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .prod-body { padding: 12px 14px 14px; }
+    .prod-name { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 4px; line-height: 1.3; }
+    .prod-frac { font-size: 12px; color: var(--text-light); margin-bottom: 8px; }
+    .prod-gost { font-size: 11px; color: #888; margin-bottom: 8px; }
+    .prod-price { font-size: 20px; font-weight: 700; color: var(--orange); }
+    .prod-price-unit { font-size: 12px; color: var(--text-light); font-weight: 400; }
+    .prod-link {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      padding: 8px;
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      border-radius: 3px;
+      transition: all 0.15s;
+    }
+    .prod-link:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+    /* ===== PRICE TABLE ===== */
+    .price-tables { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .price-table { }
+    .price-table h3 {
+      font-size: 15px; font-weight: 700; color: var(--white);
+      background: var(--nav-bg);
+      padding: 10px 14px;
+      margin-bottom: 0;
+      border-radius: 3px 3px 0 0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead tr { background: var(--gray-mid); }
+    thead th {
+      padding: 8px 12px; text-align: left;
+      font-weight: 700; color: var(--dark);
+      border: 1px solid var(--gray-line);
+      white-space: nowrap;
+    }
+    tbody tr { border-bottom: 1px solid var(--gray-mid); transition: background 0.1s; }
+    tbody tr:hover { background: #fff8f2; }
+    tbody td { padding: 8px 12px; border: 1px solid var(--gray-line); color: var(--text); }
+    .td-price { font-weight: 700; color: var(--orange); white-space: nowrap; }
+    .td-gost { color: var(--text-light); font-size: 12px; white-space: nowrap; }
+    .td-link a { color: var(--orange); font-size: 12px; }
+    .table-note {
+      font-size: 11px; color: var(--text-light);
+      padding: 8px 12px;
+      background: var(--gray-bg);
+      border: 1px solid var(--gray-line);
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+    }
+
+    /* ===== INFO BLOCKS ===== */
+    .info-blocks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .info-block {
+      border: 1px solid var(--gray-line);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .info-block-head {
+      background: var(--nav-bg);
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .info-block-body { padding: 16px; }
+    .info-block-icon { font-size: 28px; margin-bottom: 10px; }
+    .info-block-body p { font-size: 13px; color: var(--text-light); line-height: 1.6; margin-bottom: 10px; }
+    .info-block-body ul { list-style: none; }
+    .info-block-body ul li {
+      font-size: 13px; color: var(--text-light);
+      padding: 5px 0;
+      border-bottom: 1px dashed var(--gray-mid);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .info-block-body ul li:last-child { border-bottom: none; }
+    .info-block-body ul li::before { content: '›'; color: var(--orange); font-size: 16px; font-weight: 700; }
+    .info-block-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--orange);
+      font-weight: 700;
+    }
+    .info-block-link:hover { text-decoration: underline; }
+
+    /* ===== ADVANTAGES ===== */
+    .adv-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--gray-line); border: 1px solid var(--gray-line); border-radius: 4px; overflow: hidden; }
+    .adv-item { background: var(--white); padding: 20px 16px; text-align: center; }
+    .adv-icon { font-size: 34px; margin-bottom: 10px; }
+    .adv-title { font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .adv-text { font-size: 12px; color: var(--text-light); line-height: 1.5; }
+
+    /* ===== FORM ===== */
+    .order-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+    .order-form { background: var(--gray-bg); border: 1px solid var(--gray-line); border-radius: 4px; padding: 24px; }
+    .order-form h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fg { margin-bottom: 12px; }
+    .fg label { display: block; font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .fg input, .fg select, .fg textarea {
+      width: 100%;
+      padding: 9px 11px;
+      border: 1px solid var(--gray-line);
+      border-radius: 3px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--white);
+      outline: none;
+      transition: border 0.2s;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--orange); }
+    .fg textarea { resize: vertical; height: 72px; }
+    .form-submit {
+      width: 100%;
+      padding: 12px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--orange-d); }
+    .form-note { font-size: 11px; color: var(--text-light); margin-top: 8px; text-align: center; }
+    .order-contacts { }
+    .order-contacts h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .contact-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed var(--gray-line); }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-ico { font-size: 20px; width: 36px; flex-shrink: 0; text-align: center; }
+    .contact-lbl { font-size: 11px; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.3px; font-weight: 700; margin-bottom: 3px; }
+    .contact-val { font-size: 15px; font-weight: 700; color: var(--dark); }
+    .contact-val a { color: var(--dark); }
+    .contact-val a:hover { color: var(--orange); }
+    .contact-sub { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .messengers { display: flex; gap: 10px; margin-top: 6px; }
+    .msg-btn {
+      display: flex; align-items: center; gap: 6px;
+      padding: 7px 14px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .msg-wa { background: #25d366; color: #fff; }
+    .msg-tg { background: #229ed9; color: #fff; }
+    .msg-btn:hover { opacity: 0.88; color: #fff; }
+
+    /* ===== SUCCESS ===== */
+    .form-success { display: none; text-align: center; padding: 30px 20px; }
+    .form-success.show { display: block; }
+    .form-success-icon { font-size: 52px; margin-bottom: 12px; }
+    .form-success h3 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .form-success p { font-size: 14px; color: var(--text-light); }
+
+    /* ===== DELIVERY MAP ===== */
+    .delivery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .delivery-types { display: grid; gap: 12px; }
+    .del-type { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--gray-line); border-left: 4px solid var(--orange); border-radius: 4px; background: var(--gray-bg); }
+    .del-type-ico { font-size: 28px; flex-shrink: 0; }
+    .del-type h4 { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .del-type p { font-size: 12px; color: var(--text-light); line-height: 1.5; }
+    .distance-table { }
+    .distance-table table { }
+    .distance-table thead tr { background: var(--orange); }
+    .distance-table thead th { color: #fff; }
+
+    /* ===== FOOTER ===== */
+    .footer { background: var(--nav-bg); border-top: 4px solid var(--orange); padding: 30px 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 28px; }
+    .footer-col h4 { font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--orange); }
+    .footer-col p { font-size: 12px; color: #aaa; line-height: 1.7; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 7px; }
+    .footer-col ul li a { font-size: 13px; color: #bbb; transition: color 0.15s; }
+    .footer-col ul li a:hover { color: var(--orange); }
+    .footer-col ul li::before { content: '›'; color: var(--orange); font-size: 14px; font-weight: 700; margin-right: 5px; }
+    .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .footer-logo-ico { width: 48px; height: 48px; background: var(--orange); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+    .footer-logo-text { color: #fff; font-size: 17px; font-weight: 700; line-height: 1.2; }
+    .footer-logo-text span { font-size: 11px; color: #888; font-weight: 400; display: block; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-bottom { border-top: 1px solid #444; padding: 12px 0; display: flex; justify-content: space-between; align-items: center; }
+    .footer-bottom span { font-size: 12px; color: #666; }
+    .footer-bottom a { font-size: 12px; color: #666; }
+    .footer-bottom a:hover { color: var(--orange); }
+
+    /* ===== MODAL ===== */
+    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 9000; align-items: center; justify-content: center; padding: 20px; }
+    .modal-bg.open { display: flex; }
+    .modal-box { background: var(--white); border-radius: 4px; border-top: 4px solid var(--orange); padding: 28px; max-width: 460px; width: 100%; position: relative; }
+    .modal-close { position: absolute; top: 12px; right: 12px; background: var(--gray-mid); border: none; width: 28px; height: 28px; border-radius: 3px; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); }
+    .modal-close:hover { background: var(--orange); color: #fff; }
+    .modal-box h3 { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .modal-box p { font-size: 13px; color: var(--text-light); margin-bottom: 18px; }
+
+    /* ===== FLOAT ===== */
+    .float-wa {
+      position: fixed; bottom: 80px; right: 20px; z-index: 1000;
+      width: 52px; height: 52px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.4);
+      transition: transform 0.2s;
+    }
+    .float-wa:hover { transform: scale(1.1); }
+    .float-tg {
+      position: fixed; bottom: 24px; right: 20px; z-index: 1000;
+      width: 52px; height: 52px;
+      background: #229ed9;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 14px rgba(34,158,217,0.4);
+      transition: transform 0.2s;
+    }
+    .float-tg:hover { transform: scale(1.1); }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 900px) {
+      .logo-cert, .header-cert { display: none; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .price-tables { grid-template-columns: 1fr; }
+      .info-blocks { grid-template-columns: 1fr; }
+      .adv-grid { grid-template-columns: repeat(2, 1fr); }
+      .order-grid { grid-template-columns: 1fr; }
+      .delivery-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo { height: 160px; }
+    }
+    @media (max-width: 680px) {
+      .header-inner { flex-wrap: wrap; gap: 12px; }
+      .nav-inner { display: none; flex-direction: column; }
+      .nav-inner.open { display: flex; }
+      .nav-dropdown { position: static; border: none; border-top: none; display: none; box-shadow: none; }
+      .nav-item:hover .nav-dropdown { display: none; }
+      .nav-item.open .nav-dropdown { display: block; background: var(--dark); }
+      .nav-item.open .nav-dropdown a { border-bottom-color: #444; color: #ccc; }
+      .nav-item.open .nav-dropdown a:hover { background: transparent; color: var(--orange); }
+      .burger { display: block; }
+      .slide-content { padding: 0 24px; }
+      .slide-content h2 { font-size: 22px; }
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .adv-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <span class="topbar-left">Производство и продажа нерудных материалов с 2008 года · г. Старый Оскол, Белгородская обл.</span>
+      <div class="topbar-right">
+        <a href="#about">О предприятии</a>
+        <a href="#certs">Сертификаты</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-block">
+        <div class="logo-img">⛏️</div>
+        <div class="logo-text-block">
+          <div class="logo-title">Стойленский <span>карьер</span></div>
+          <div class="logo-sub">Нерудные материалы от производителя</div>
+        </div>
+      </div>
+
+      <div class="header-cert">
+        <strong>📋 ГОСТ 8267-93</strong>
+        Сертифицированная продукция<br>Паспорт качества с каждой партией
+      </div>
+
+      <div class="header-contacts">
+        <a href="tel:+78003337788" class="header-phone">8 (800) 333-77-88</a>
+        <span class="header-phone-free">Бесплатно по России</span>
+        <div class="header-addr">г. Старый Оскол, пр. Губкина, 37</div>
+        <button class="header-btn" onclick="openModal()">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container">
+    <button class="burger" onclick="toggleNav()">☰</button>
+    <div class="nav-inner" id="mainNav">
+      <div class="nav-item">
+        <a href="#about" class="nav-link">О предприятии</a>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Продукция ▾</span>
+        <div class="nav-dropdown">
+          <a href="#sheben">Щебень гранитный</a>
+          <a href="#sheben">Щебень известняковый</a>
+          <a href="#sheben">Щебень гравийный</a>
+          <a href="#sheben">Отсев 0–5 мм</a>
+          <a href="#sheben">ЩПС (смесь)</a>
+          <a href="#sheben">Балластный щебень (ЖД)</a>
+          <a href="#prices">Прайс-лист</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Клиентам ▾</span>
+        <div class="nav-dropdown">
+          <a href="#prices">Прайс-лист</a>
+          <a href="#calc">Калькулятор объёма</a>
+          <a href="#delivery">Условия доставки</a>
+          <a href="#faq">Вопросы и ответы</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#delivery" class="nav-link">Доставка</a>
+      </div>
+      <div class="nav-item">
+        <a href="#certs" class="nav-link">Сертификаты</a>
+      </div>
+      <div class="nav-item">
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </div>
+      <div class="nav-item">
+        <a href="tel:+79003005050" class="nav-link">+7 (900) 300-50-50</a>
+      </div>
+      <div class="nav-item nav-cta" style="margin-left:auto">
+        <a href="#contacts" class="nav-link" onclick="openModal()">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- SLIDER -->
+<div class="slider">
+  <button class="slider-arrow prev" onclick="slidePrev()">&#8249;</button>
+  <button class="slider-arrow next" onclick="slideNext()">&#8250;</button>
+  <div class="slides" id="slides">
+
+    <div class="slide">
+      <div class="slide-bg" style="background-image: url('img/slide1.jpg');"></div>
+      <div class="container">
+        <div class="slide-content">
+          <div class="slide-label">Собственный карьер · Старый Оскол</div>
+          <h2>Щебень от производителя<br><span>без наценки посредников</span></h2>
+          <p>Добываем гранитный, известняковый и гравийный щебень напрямую с карьера. Цены на 30–40% ниже московских дилеров.</p>
+          <button class="slide-btn" onclick="openModal()">Получить прайс-лист</button>
+          <a href="#prices" class="slide-btn-outline">Цены на сайте</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-bg" style="background-image: url('img/slide2.jpg');"></div>
+      <div class="container">
+        <div class="slide-content">
+          <div class="slide-label">Доставка по всей России</div>
+          <h2>Авто и <span>ЖД доставка</span><br>в любой регион</h2>
+          <p>Самосвалы КАМАЗ и железнодорожные вагоны. Центральное расположение в России — минимальные транспортные расходы.</p>
+          <button class="slide-btn" onclick="document.querySelector('#delivery').scrollIntoView({behavior:'smooth'})">Условия доставки</button>
+          <a href="#calc" class="slide-btn-outline">Рассчитать стоимость</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-bg" style="background-image: url('img/slide3.jpg');"></div>
+      <div class="container">
+        <div class="slide-content">
+          <div class="slide-label">Прайс-лист 2026</div>
+          <h2>Актуальные цены<br>на <span>щебень и песок</span></h2>
+          <p>Цены обновлены. Гранитный щебень от 1 100 руб/т, известняковый от 750 руб/т, гравийный от 650 руб/т. Скидки от объёма.</p>
+          <button class="slide-btn" onclick="document.querySelector('#prices').scrollIntoView({behavior:'smooth'})">Смотреть прайс</button>
+          <button class="slide-btn-outline" onclick="openModal()">Запросить КП</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="slider-controls">
+    <div class="slider-dot active" onclick="goSlide(0)">1</div>
+    <div class="slider-dot" onclick="goSlide(1)">2</div>
+    <div class="slider-dot" onclick="goSlide(2)">3</div>
+  </div>
+</div>
+
+<!-- ADVANTAGES STRIP -->
+<div style="background: var(--orange); padding: 0;">
+  <div class="container">
+    <div class="adv-grid" style="background: var(--orange); border: none; border-radius: 0;">
+      <div class="adv-item" style="background: var(--orange);">
+        <div class="adv-icon">🏭</div>
+        <div class="adv-title" style="color:#fff">Собственный карьер</div>
+        <div class="adv-text" style="color:rgba(255,255,255,0.85)">Без посредников. Прямые цены производителя.</div>
+      </div>
+      <div class="adv-item" style="background: var(--orange-d);">
+        <div class="adv-icon">🚚</div>
+        <div class="adv-title" style="color:#fff">Доставка 24/7</div>
+        <div class="adv-text" style="color:rgba(255,255,255,0.85)">Авто и ЖД по всей России. От 1 тонны.</div>
+      </div>
+      <div class="adv-item" style="background: var(--orange);">
+        <div class="adv-icon">📋</div>
+        <div class="adv-title" style="color:#fff">ГОСТ 8267-93</div>
+        <div class="adv-text" style="color:rgba(255,255,255,0.85)">Сертификаты и паспорта качества на партию.</div>
+      </div>
+      <div class="adv-item" style="background: var(--orange-d);">
+        <div class="adv-icon">📉</div>
+        <div class="adv-title" style="color:#fff">Скидки от объёма</div>
+        <div class="adv-text" style="color:rgba(255,255,255,0.85)">От 500 т — 5%, от 1 000 т — 10%.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="container">
+    <div class="sec-title">О предприятии <span>— Стойленский карьер, г. Старый Оскол</span></div>
+    <div class="about-grid">
+      <div class="about-photo" style="padding:0;overflow:hidden;background:#222;">
+        <img src="img/quarry.jpg"
+             alt="Карьер Стойленский — производство щебня в Старом Осколе"
+             style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+      <div class="about-text">
+        <h3>Стойленский карьер основан в 2008 году на базе месторождения Белгородской области</h3>
+        <p>Предприятие специализируется на добыче и реализации нерудных строительных материалов: гранитного, известнякового и гравийного щебня, отсева, щебеночно-песчаной смеси. Собственный парк техники и прямой выход на железнодорожные пути обеспечивают логистику любого масштаба.</p>
+        <p>Продукция соответствует требованиям ГОСТ 8267-93 и ГОСТ 7392-2014. На каждую партию выдаётся паспорт качества и радиационный сертификат. Работаем с юридическими и физическими лицами, НДС / без НДС.</p>
+        <p>Географическое расположение в центре России (Старый Оскол, Белгородская обл.) обеспечивает минимальные транспортные расходы при доставке в ЦФО, ЮФО, ПФО и другие федеральные округа.</p>
+        <div class="about-facts">
+          <div class="about-fact"><strong>15+</strong><span>лет на рынке</span></div>
+          <div class="about-fact"><strong>500к</strong><span>тонн в год</span></div>
+          <div class="about-fact"><strong>1 500+</strong><span>клиентов</span></div>
+          <div class="about-fact"><strong>85</strong><span>регионов</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec" id="sheben" style="background: var(--gray-bg); padding-top: 36px; padding-bottom: 36px;">
+  <div class="container">
+    <div class="sec-title">Щебень <span>— все виды и фракции</span></div>
+    <div class="products-grid">
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/granite_s.jpg"
+               alt="Щебень гранитный 5–20 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+          <div class="prod-badge">Хит</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень гранитный 5–20 мм</div>
+          <div class="prod-frac">Фракция: 5–20 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M1000–1200</div>
+          <div class="prod-price">1 100 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Гранитный щебень 5–20');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/granite_m.jpg"
+               alt="Щебень гранитный 20–40 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень гранитный 20–40 мм</div>
+          <div class="prod-frac">Фракция: 20–40 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M1000</div>
+          <div class="prod-price">1 050 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Гранитный щебень 20–40');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/granite_l.jpg"
+               alt="Щебень гранитный 40–70 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень гранитный 40–70 мм</div>
+          <div class="prod-frac">Фракция: 40–70 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M1000</div>
+          <div class="prod-price">1 000 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Гранитный щебень 40–70');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/granite_xl.jpg"
+               alt="Щебень гранитный 70–120 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень гранитный 70–120 мм</div>
+          <div class="prod-frac">Фракция: 70–120 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M1000</div>
+          <div class="prod-price">980 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Гранитный щебень 70–120');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/limestone.jpg"
+               alt="Щебень известняковый 5–20 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень известняковый 5–20 мм</div>
+          <div class="prod-frac">Фракция: 5–20 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M400–600</div>
+          <div class="prod-price">750 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Известняковый щебень 5–20');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/gravel.jpg"
+               alt="Щебень гравийный 5–20 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Щебень гравийный 5–20 мм</div>
+          <div class="prod-frac">Фракция: 5–20 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93 | M400</div>
+          <div class="prod-price">650 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Гравийный щебень 5–20');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/screenings.jpg"
+               alt="Отсев 0–5 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Отсев 0–5 мм / 0–10 мм</div>
+          <div class="prod-frac">Фракция: 0–5, 0–10 мм</div>
+          <div class="prod-gost">ГОСТ 8267-93</div>
+          <div class="prod-price">400 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('Отсев');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="padding:0;overflow:hidden;">
+          <img src="img/ballast.jpg"
+               alt="Балластный щебень 25–60 мм" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s;">
+          <div class="prod-badge">ЖД</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Балластный щебень 25–60 мм</div>
+          <div class="prod-frac">Фракция: 25–60 мм</div>
+          <div class="prod-gost">ГОСТ 7392-2014 | M1200</div>
+          <div class="prod-price">1 200 <span class="prod-price-unit">руб/тн</span></div>
+          <a href="#" class="prod-link" onclick="openModal('ЖД балласт');return false;">Оставить заявку</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="sec" id="prices">
+  <div class="container">
+    <div class="sec-title">Прайс-лист <span>— цены актуальны на апрель 2026 г.</span></div>
+    <div class="price-tables">
+
+      <div class="price-table">
+        <h3>Прайс-лист на нерудные строительные материалы</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Наименование / Фракция</th>
+              <th>ГОСТ</th>
+              <th>Цена (руб/тн)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Щебень гранитный 5–10 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 150</td></tr>
+            <tr><td>Щебень гранитный 5–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 100</td></tr>
+            <tr><td>Щебень гранитный 10–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 100</td></tr>
+            <tr><td>Щебень гранитный 20–40 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 050</td></tr>
+            <tr><td>Щебень гранитный 40–70 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 000</td></tr>
+            <tr><td>Щебень гранитный 70–120 мм</td><td class="td-gost">8267-93</td><td class="td-price">980</td></tr>
+            <tr><td>Щебень известняковый 5–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">750</td></tr>
+            <tr><td>Щебень известняковый 20–40 мм</td><td class="td-gost">8267-93</td><td class="td-price">720</td></tr>
+            <tr><td>Щебень гравийный 5–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">650</td></tr>
+            <tr><td>Щебень гравийный 20–40 мм</td><td class="td-gost">8267-93</td><td class="td-price">620</td></tr>
+            <tr><td>ЩПС 0–40 мм (смесь)</td><td class="td-gost">25607-2009</td><td class="td-price">500</td></tr>
+            <tr><td>Отсев 0–5 мм</td><td class="td-gost">8267-93</td><td class="td-price">400</td></tr>
+            <tr><td>Отсев 0–10 мм</td><td class="td-gost">8267-93</td><td class="td-price">420</td></tr>
+            <tr><td>Вскрышная порода</td><td class="td-gost">—</td><td class="td-price">150</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">Цена указана за 1 тонну, без учёта доставки, с НДС 20%. Цены при самовывозе с карьера. Скидки от объёма обсуждаются индивидуально.</div>
+      </div>
+
+      <div class="price-table">
+        <h3>Прайс-лист на щебень ЖД-доставкой (вагон)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Наименование / Фракция</th>
+              <th>ГОСТ</th>
+              <th>Цена (руб/тн)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Щебень гранитный 5–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 200</td></tr>
+            <tr><td>Щебень гранитный 20–40 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 150</td></tr>
+            <tr><td>Щебень гранитный 40–70 мм</td><td class="td-gost">8267-93</td><td class="td-price">1 100</td></tr>
+            <tr><td>Щебень известняковый 5–20 мм</td><td class="td-gost">8267-93</td><td class="td-price">850</td></tr>
+            <tr><td>Щебень известняковый 20–40 мм</td><td class="td-gost">8267-93</td><td class="td-price">820</td></tr>
+            <tr><td>Балластный щебень 25–60 мм</td><td class="td-gost">7392-2014</td><td class="td-price">1 350</td></tr>
+            <tr><td>ЩПС 0–40 мм</td><td class="td-gost">25607-2009</td><td class="td-price">580</td></tr>
+            <tr><td>Отсев 0–5 мм</td><td class="td-gost">8267-93</td><td class="td-price">480</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">Цена включает погрузку в вагон на ст. Старый Оскол + НДС 20%. Тариф РЖД до станции назначения — отдельно. Минимальный объём: 1 вагон (60–70 тн). Скидки от 5 вагонов.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="sec" id="calc" style="background: var(--gray-bg);">
+  <div class="container">
+    <div class="sec-title">Калькулятор объёма <span>— перевод кубов в тонны и расчёт стоимости</span></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;" class="calc-outer">
+      <div style="background:#fff; border:1px solid var(--gray-line); border-radius:4px; padding:20px;">
+        <h3 style="font-size:15px; font-weight:700; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.3px;">Расчёт стоимости</h3>
+        <div class="fg">
+          <label>Материал</label>
+          <select id="cProduct" onchange="calc()">
+            <option value="1100">Гранитный щебень 5–20 мм — 1 100 руб/тн</option>
+            <option value="1050">Гранитный щебень 20–40 мм — 1 050 руб/тн</option>
+            <option value="1000">Гранитный щебень 40–70 мм — 1 000 руб/тн</option>
+            <option value="750">Известняковый щебень 5–20 мм — 750 руб/тн</option>
+            <option value="720">Известняковый щебень 20–40 мм — 720 руб/тн</option>
+            <option value="650">Гравийный щебень 5–20 мм — 650 руб/тн</option>
+            <option value="500">ЩПС 0–40 мм — 500 руб/тн</option>
+            <option value="400">Отсев 0–5 мм — 400 руб/тн</option>
+          </select>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div class="fg" style="margin:0">
+            <label>Объём (тонн)</label>
+            <input type="number" id="cTons" value="50" min="1" oninput="calc()">
+          </div>
+          <div class="fg" style="margin:0">
+            <label>Расстояние (км)</label>
+            <input type="number" id="cKm" value="200" min="0" oninput="calc()">
+          </div>
+        </div>
+        <div class="fg">
+          <label>Способ доставки</label>
+          <select id="cDel" onchange="calc()">
+            <option value="55">Автомобильный (КАМАЗ, руб/тн за 100 км)</option>
+            <option value="30">Железнодорожный (вагон)</option>
+            <option value="0">Самовывоз</option>
+          </select>
+        </div>
+        <div style="background:var(--nav-bg); border-radius:3px; padding:16px; margin-top:4px;">
+          <div style="display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #555; font-size:13px;">
+            <span style="color:#aaa">Стоимость материала:</span>
+            <strong style="color:#fff" id="rMat">55 000 ₽</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #555; font-size:13px;">
+            <span style="color:#aaa">Доставка (ориентир):</span>
+            <strong style="color:#fff" id="rDel">—</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding:10px 0 4px; font-size:15px;">
+            <span style="color:#ccc; font-weight:700;">ИТОГО:</span>
+            <strong style="color:var(--orange); font-size:22px;" id="rTotal">55 000 ₽</strong>
+          </div>
+        </div>
+        <button class="form-submit" style="margin-top:12px" onclick="openModal()">Получить точный расчёт</button>
+      </div>
+      <div style="background:#fff; border:1px solid var(--gray-line); border-radius:4px; padding:20px;">
+        <h3 style="font-size:15px; font-weight:700; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.3px;">Перевод м³ → тонны</h3>
+        <table>
+          <thead><tr><th>Материал</th><th>1 м³ = тонн</th><th>1 тн = м³</th></tr></thead>
+          <tbody>
+            <tr><td>Щебень гранитный</td><td><strong>1,40</strong></td><td>0,71</td></tr>
+            <tr><td>Щебень известняковый</td><td><strong>1,35</strong></td><td>0,74</td></tr>
+            <tr><td>Щебень гравийный</td><td><strong>1,30</strong></td><td>0,77</td></tr>
+            <tr><td>Отсев (0–5 мм)</td><td><strong>1,50</strong></td><td>0,67</td></tr>
+            <tr><td>ЩПС смесь</td><td><strong>1,65</strong></td><td>0,61</td></tr>
+            <tr><td>Песок строительный</td><td><strong>1,55</strong></td><td>0,65</td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:14px; padding:12px; background:var(--gray-bg); border:1px solid var(--gray-line); border-radius:3px; font-size:12px; color:var(--text-light); line-height:1.6;">
+          <strong style="color:var(--dark);">💡 Выгода ЖД при объёме от 60 тонн:</strong><br>
+          Погрузка в вагон на ст. Старый Оскол. Тариф РЖД в 2–3 раза дешевле авто на расстояниях свыше 500 км. Подходит для Поволжья, Сибири, Дальнего Востока.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BLOCKS -->
+<section class="sec" id="certs">
+  <div class="container">
+    <div class="sec-title">Клиентам <span>— сертификаты, доставка, условия</span></div>
+    <div class="info-blocks">
+
+      <div class="info-block">
+        <div class="info-block-head">📋 Сертификаты и ГОСТ</div>
+        <div class="info-block-body">
+          <div class="info-block-icon">📄</div>
+          <p>На всю продукцию имеются действующие сертификаты соответствия. Предоставляем с каждой партией:</p>
+          <ul>
+            <li>Паспорт качества продукции</li>
+            <li>Сертификат соответствия ГОСТ 8267-93</li>
+            <li>Радиационный сертификат (I класс)</li>
+            <li>Декларация соответствия ТР ТС</li>
+          </ul>
+          <a href="#contacts" class="info-block-link" onclick="openModal();return false;">Запросить документы →</a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-head">🚚 Условия доставки</div>
+        <div class="info-block-body">
+          <div class="info-block-icon">🗺️</div>
+          <p>Доставляем по всей России с минимальными тарифами из Старого Оскола:</p>
+          <ul>
+            <li>Авто (КАМАЗ, тонар) — до 800 км</li>
+            <li>ЖД вагоны — по всей России</li>
+            <li>Самовывоз — круглосуточно</li>
+            <li>Минимальный объём — 1 тонна</li>
+          </ul>
+          <a href="#delivery" class="info-block-link">Подробнее о доставке →</a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-head">💼 Условия работы</div>
+        <div class="info-block-body">
+          <div class="info-block-icon">🤝</div>
+          <p>Гибкие условия для юридических и физических лиц:</p>
+          <ul>
+            <li>Работаем с НДС и без НДС</li>
+            <li>Безналичный расчёт, наличные</li>
+            <li>Отсрочка платежа от 14 дней</li>
+            <li>Договор на постоянные поставки</li>
+          </ul>
+          <a href="#contacts" class="info-block-link" onclick="openModal();return false;">Заключить договор →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="sec" id="delivery" style="background: var(--gray-bg);">
+  <div class="container">
+    <div class="sec-title">Доставка <span>— авто и железнодорожный транспорт по всей России</span></div>
+    <div class="delivery-grid">
+      <div class="delivery-types">
+        <div class="del-type">
+          <div class="del-type-ico">🚚</div>
+          <div>
+            <h4>Автомобильная доставка</h4>
+            <p>Самосвалы КАМАЗ 20–25 т, тонары 40–50 т. Доставка в ЦФО, ЮФО, ПФО в течение 1–2 суток. Разгрузка непосредственно на объекте. Возможна доставка до 800 км.</p>
+          </div>
+        </div>
+        <div class="del-type">
+          <div class="del-type-ico">🚂</div>
+          <div>
+            <h4>Железнодорожная доставка</h4>
+            <p>Погрузка на станции Старый Оскол. Вагоны 60–70 тонн, думпкары. Подача на станцию назначения по всей России. Экономия 40–50% по сравнению с авто на дальних маршрутах. Срок 7–21 день.</p>
+          </div>
+        </div>
+        <div class="del-type">
+          <div class="del-type-ico">🏗️</div>
+          <div>
+            <h4>Самовывоз с карьера</h4>
+            <p>Отгрузка 24/7. Точные электронные весы. Погрузка экскаваторами и фронтальными погрузчиками. Минимальный объём — 1 тонна. Оплата на месте или по счёту.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="distance-table">
+          <table>
+            <thead><tr><th>Город</th><th>Расстояние</th><th>Способ</th><th>~Срок</th></tr></thead>
+            <tbody>
+              <tr><td>Белгород</td><td>110 км</td><td>Авто</td><td>1 день</td></tr>
+              <tr><td>Курск</td><td>160 км</td><td>Авто</td><td>1 день</td></tr>
+              <tr><td>Воронеж</td><td>290 км</td><td>Авто</td><td>1–2 дня</td></tr>
+              <tr><td>Липецк</td><td>340 км</td><td>Авто</td><td>2 дня</td></tr>
+              <tr><td>Ростов-на-Дону</td><td>460 км</td><td>Авто</td><td>2 дня</td></tr>
+              <tr><td>Москва</td><td>560 км</td><td>Авто/ЖД</td><td>2–3 дня</td></tr>
+              <tr><td>Краснодар</td><td>640 км</td><td>Авто/ЖД</td><td>3–4 дня</td></tr>
+              <tr><td>Казань</td><td>1 100 км</td><td>ЖД</td><td>7–10 дней</td></tr>
+              <tr><td>Новосибирск</td><td>3 200 км</td><td>ЖД</td><td>12–16 дней</td></tr>
+            </tbody>
+          </table>
+          <div class="table-note">Сроки ориентировочные. Точная стоимость доставки рассчитывается менеджером.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="container">
+    <div class="sec-title">Вопросы и ответы <span>— часто задаваемые вопросы</span></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;" id="faqGrid">
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Какой минимальный объём заказа?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">Минимальный объём при самовывозе — 1 тонна. При автодоставке экономически целесообразно заказывать от 20 тонн (полный самосвал). При ЖД-доставке — от 60 тонн (1 вагон).</div>
+        </div>
+      </div>
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Есть ли сертификаты на продукцию?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">Да. Паспорт качества ГОСТ 8267-93, радиационный сертификат (I класс), декларация соответствия ТР ТС — предоставляем на каждую партию. Документы можно получить по запросу заранее.</div>
+        </div>
+      </div>
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Как быстро можно получить щебень?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">Самовывоз — в день обращения. Автодоставка до 300 км — следующий день. До 600 км — 2 дня. ЖД — от 7 до 21 дня. Срочная отгрузка возможна при наличии свободного транспорта.</div>
+        </div>
+      </div>
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Работаете с НДС?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">Да, работаем как с НДС (20%), так и без НДС. Предоставляем полный пакет: договор поставки, счёт, УПД (счёт-фактура + ТОРГ-12), паспорт качества.</div>
+        </div>
+      </div>
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Есть ли отсрочка платежа?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">Для постоянных клиентов — отсрочка до 30 дней. Для новых клиентов при первых поставках — 100% предоплата или оплата по факту отгрузки. Условия обсуждаются индивидуально.</div>
+        </div>
+      </div>
+      <div class="faq-item" style="border:1px solid var(--gray-line); border-radius:4px; overflow:hidden;">
+        <div onclick="tFaq(this)" style="padding:14px 16px; font-size:14px; font-weight:700; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:var(--gray-bg);">
+          Какие скидки при большом объёме?
+          <span style="color:var(--orange); font-size:18px; font-weight:700; flex-shrink:0; margin-left:10px;">+</span>
+        </div>
+        <div style="max-height:0; overflow:hidden; transition:max-height 0.3s; font-size:13px; color:var(--text-light); line-height:1.6; padding:0 16px;">
+          <div style="padding-bottom:14px; padding-top:2px;">От 500 тонн — скидка 5%. От 1 000 тонн — скидка 10%. Свыше 5 000 тонн — индивидуальный прайс и особые условия. Действуют также скидки для постоянных клиентов.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS + FORM -->
+<section class="sec" id="contacts" style="background: var(--gray-bg);">
+  <div class="container">
+    <div class="sec-title">Контакты <span>— оставить заявку или связаться с менеджером</span></div>
+    <div class="order-grid">
+      <div class="order-form">
+        <h3>Оставить заявку</h3>
+        <form id="mainForm" onsubmit="submitF(event)">
+          <div class="form-row">
+            <div class="fg" style="margin:0"><label>Имя *</label><input type="text" name="name" placeholder="Иван Иванов" required></div>
+            <div class="fg" style="margin:0"><label>Компания</label><input type="text" name="company" placeholder="ООО Стройсервис"></div>
+          </div>
+          <div class="fg"><label>Телефон *</label><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+          <div class="form-row">
+            <div class="fg" style="margin:0">
+              <label>Материал</label>
+              <select name="product">
+                <option>Гранитный щебень</option>
+                <option>Известняковый щебень</option>
+                <option>Гравийный щебень</option>
+                <option>Отсев</option>
+                <option>ЖД балласт</option>
+                <option>Несколько позиций</option>
+              </select>
+            </div>
+            <div class="fg" style="margin:0"><label>Объём (тонн)</label><input type="number" name="vol" placeholder="100" min="1"></div>
+          </div>
+          <div class="fg"><label>Регион доставки</label><input type="text" name="city" placeholder="Москва, Воронеж, Казань..."></div>
+          <div class="fg"><label>Комментарий</label><textarea name="comment" placeholder="Фракция, сроки, условия..."></textarea></div>
+          <button type="submit" class="form-submit">Отправить заявку</button>
+          <div class="form-note">Ответим за 15 минут · Пн–Вс 7:00–22:00 · Без спама</div>
+        </form>
+        <div class="form-success" id="mainSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3>Заявка принята!</h3>
+          <p>Менеджер перезвонит в течение 15 минут и подготовит коммерческое предложение</p>
+        </div>
+      </div>
+      <div class="order-contacts">
+        <h3>Наши контакты</h3>
+        <div class="contact-row">
+          <div class="contact-ico">📞</div>
+          <div>
+            <div class="contact-lbl">Телефон</div>
+            <div class="contact-val"><a href="tel:+78003337788">8 (800) 333-77-88</a></div>
+            <div class="contact-sub">Звонок бесплатный по России · Пн–Вс 7:00–22:00</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📱</div>
+          <div>
+            <div class="contact-lbl">Отдел продаж (прямой)</div>
+            <div class="contact-val"><a href="tel:+79003005050">+7 (900) 300-50-50</a></div>
+            <div class="contact-sub">Вопросы по заявкам и доставке</div>
+            <div class="messengers">
+              <a href="https://wa.me/79003005050" class="msg-btn msg-wa">💬 WhatsApp</a>
+              <a href="https://t.me/stoilenskykarier" class="msg-btn msg-tg">✈️ Telegram</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📧</div>
+          <div>
+            <div class="contact-lbl">Электронная почта</div>
+            <div class="contact-val">info@stoilenskiy-karier.ru</div>
+            <div class="contact-sub">Для коммерческих предложений и документов</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📍</div>
+          <div>
+            <div class="contact-lbl">Адрес</div>
+            <div class="contact-val">г. Старый Оскол, Белгородская обл.</div>
+            <div class="contact-sub">Карьер: пос. Северный, промзона<br>Заезд самосвалов: круглосуточно</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">🕐</div>
+          <div>
+            <div class="contact-lbl">Режим работы</div>
+            <div class="contact-val">Приём заявок: 24/7</div>
+            <div class="contact-sub">Офис: Пн–Пт 8:00–18:00<br>Отгрузка с карьера: ежедневно, круглосуточно</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <div class="footer-logo-ico">⛏️</div>
+          <div class="footer-logo-text">
+            Стойленский карьер
+            <span>Нерудные материалы</span>
+          </div>
+        </div>
+        <p>Производство и продажа щебня, отсева и нерудных материалов из собственного карьера в г. Старый Оскол. Доставка автотранспортом и ЖД по всей России.</p>
+        <p style="margin-top:10px;">📞 <a href="tel:+78003337788" style="color:#aaa;">8 (800) 333-77-88</a> (бесплатно)</p>
+        <p>📍 г. Старый Оскол, Белгородская обл.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Продукция</h4>
+        <ul>
+          <li><a href="#sheben">Гранитный щебень</a></li>
+          <li><a href="#sheben">Известняковый щебень</a></li>
+          <li><a href="#sheben">Гравийный щебень</a></li>
+          <li><a href="#sheben">Отсев 0–5 мм</a></li>
+          <li><a href="#sheben">ЩПС (смесь)</a></li>
+          <li><a href="#sheben">ЖД балласт</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Клиентам</h4>
+        <ul>
+          <li><a href="#prices">Прайс-лист</a></li>
+          <li><a href="#calc">Калькулятор</a></li>
+          <li><a href="#delivery">Условия доставки</a></li>
+          <li><a href="#certs">Сертификаты</a></li>
+          <li><a href="#faq">Вопросы и ответы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#about">О предприятии</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2008–2026 Стойленский карьер. Все права защищены.</span>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<a href="https://wa.me/79003005050" class="float-wa" title="WhatsApp">💬</a>
+<a href="https://t.me/stoilenskykarier" class="float-tg" title="Telegram">✈️</a>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modalBg" onclick="closeMod(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeMod()">✕</button>
+    <h3>Оставить заявку</h3>
+    <p>Перезвоним в течение 15 минут и подготовим КП</p>
+    <form id="modalForm" onsubmit="submitMod(event)">
+      <div class="fg"><label>Телефон *</label><input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+      <div class="fg">
+        <label>Материал</label>
+        <select name="product" id="modProd">
+          <option>Гранитный щебень</option>
+          <option>Известняковый щебень</option>
+          <option>Гравийный щебень</option>
+          <option>Отсев</option>
+          <option>ЖД балласт</option>
+          <option>Уточню у менеджера</option>
+        </select>
+      </div>
+      <div class="fg"><label>Ваш город</label><input type="text" name="city" placeholder="Москва, Воронеж..."></div>
+      <button type="submit" class="form-submit">Отправить заявку</button>
+      <div class="form-note">Без спама · Ответ за 15 минут · Пн–Вс 7:00–22:00</div>
+    </form>
+    <div class="form-success" id="modSuccess">
+      <div class="form-success-icon">✅</div>
+      <h3>Заявка принята!</h3>
+      <p>Перезвоним в течение 15 минут</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// --- SLIDER ---
+let cur = 0;
+const total = 3;
+function goSlide(n) {
+  cur = n;
+  document.getElementById('slides').style.transform = `translateX(-${cur * 100}%)`;
+  document.querySelectorAll('.slider-dot').forEach((d,i) => d.classList.toggle('active', i === cur));
+}
+function slideNext() { goSlide((cur + 1) % total); }
+function slidePrev() { goSlide((cur - 1 + total) % total); }
+setInterval(slideNext, 5000);
+
+// --- NAV MOBILE ---
+function toggleNav() {
+  document.getElementById('mainNav').classList.toggle('open');
+}
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    const item = this.closest('.nav-item');
+    if (window.innerWidth <= 680 && item.querySelector('.nav-dropdown')) {
+      item.classList.toggle('open');
+    }
+  });
+});
+
+// --- CALCULATOR ---
+function calc() {
+  const price = +document.getElementById('cProduct').value || 1100;
+  const tons  = +document.getElementById('cTons').value || 0;
+  const km    = +document.getElementById('cKm').value || 0;
+  const dRate = +document.getElementById('cDel').value || 0;
+  const mat   = price * tons;
+  const del   = dRate > 0 ? Math.round(dRate * km * tons / 1000) * 100 : 0;
+  const total = mat + del;
+  document.getElementById('rMat').textContent   = mat   > 0 ? fmt(mat)   + ' ₽' : '—';
+  document.getElementById('rDel').textContent   = dRate === 0 ? 'Самовывоз' : (del > 0 ? '~' + fmt(del) + ' ₽' : '—');
+  document.getElementById('rTotal').textContent = total > 0 ? '~' + fmt(total) + ' ₽' : '—';
+}
+function fmt(n) { return n.toLocaleString('ru-RU'); }
+calc();
+
+// --- FAQ ---
+function tFaq(el) {
+  const body = el.nextElementSibling;
+  const plus = el.querySelector('span');
+  const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+  document.querySelectorAll('#faqGrid .faq-item').forEach(item => {
+    item.querySelector('div + div').style.maxHeight = '0px';
+    const s = item.querySelector('div span');
+    if (s) s.textContent = '+';
+  });
+  if (!isOpen) {
+    body.style.maxHeight = body.scrollHeight + 'px';
+    if (plus) plus.textContent = '−';
+  }
+}
+
+// --- MODAL ---
+function openModal(prod) {
+  document.getElementById('modalBg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (prod) {
+    const s = document.getElementById('modProd');
+    for (let o of s.options) { if (o.text.includes(prod.split(' ')[0])) { s.value = o.value; break; } }
+  }
+}
+function closeMod(e) {
+  if (!e || e.target === document.getElementById('modalBg')) {
+    document.getElementById('modalBg').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMod({}); });
+
+// --- FORMS ---
+function submitF(e) {
+  e.preventDefault();
+  document.getElementById('mainForm').style.display = 'none';
+  document.getElementById('mainSuccess').classList.add('show');
+}
+function submitMod(e) {
+  e.preventDefault();
+  document.getElementById('modalForm').style.display = 'none';
+  document.getElementById('modSuccess').classList.add('show');
+}
+
+// --- PHONE MASK ---
+document.querySelectorAll('input[type="tel"]').forEach(inp => {
+  inp.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'');
+    if (v.startsWith('8')) v = '7' + v.slice(1);
+    if (v.startsWith('7') && v.length > 1) {
+      this.value = '+7 (' + (v[1]||'') + (v[2]||'') + (v[3]||'') + ') '
+        + (v[4]||'') + (v[5]||'') + (v[6]||'') + '-'
+        + (v[7]||'') + (v[8]||'') + '-'
+        + (v[9]||'') + (v[10]||'');
+    }
+  });
+});
+
+// --- SMOOTH SCROLL ---
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#' || id === '') return;
+    const el = document.querySelector(id);
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>

@@ -614,47 +614,46 @@
   <div class="container">
     <div class="header-inner">
       <div class="logo-block">
-        <div class="logo-img" style="background:none; padding:0;">
-          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
-            <rect width="72" height="72" rx="10" fill="#1a1a1a"/>
-            <!-- sphinx body (lying, facing right) -->
-            <path d="M6 44 Q6 38 12 38 L38 38 L38 58 L6 58 Z" fill="#ff9c38"/>
-            <!-- back hump -->
-            <ellipse cx="10" cy="38" rx="6" ry="5" fill="#ff9c38"/>
-            <!-- front paws extending right -->
-            <rect x="36" y="50" width="28" height="8" rx="4" fill="#ff9c38"/>
-            <!-- paw toes -->
-            <line x1="44" y1="58" x2="43" y2="63" stroke="#c47020" stroke-width="1.5"/>
-            <line x1="50" y1="58" x2="50" y2="63" stroke="#c47020" stroke-width="1.5"/>
-            <line x1="57" y1="58" x2="58" y2="63" stroke="#c47020" stroke-width="1.5"/>
-            <!-- neck -->
-            <path d="M28 22 L36 18 L44 22 L44 42 L28 42 Z" fill="#ff9c38"/>
-            <!-- nemes headdress (flat top, wide) -->
-            <path d="M14 10 L52 10 L56 28 L18 28 Z" fill="#e07d1a"/>
-            <!-- headdress stripes -->
-            <line x1="15" y1="15" x2="52" y2="15" stroke="#c47020" stroke-width="1.2"/>
-            <line x1="15" y1="20" x2="53" y2="20" stroke="#c47020" stroke-width="1.2"/>
-            <line x1="16" y1="25" x2="54" y2="25" stroke="#c47020" stroke-width="1.2"/>
-            <!-- left flap hanging down -->
-            <path d="M14 10 L10 54 L18 54 L22 28 Z" fill="#e07d1a"/>
-            <!-- face -->
-            <ellipse cx="40" cy="28" rx="12" ry="14" fill="#f5c870"/>
-            <!-- eye (almond, Egyptian profile style) -->
-            <path d="M35 24 Q41 20 47 24 Q41 28 35 24 Z" fill="#1a1a1a"/>
-            <ellipse cx="41" cy="23.5" rx="2.5" ry="2" fill="white"/>
-            <circle cx="41" cy="23.5" r="1" fill="#1a1a1a"/>
-            <!-- kohl tail -->
-            <line x1="47" y1="24" x2="50" y2="23" stroke="#1a1a1a" stroke-width="1.3"/>
-            <!-- nose (profile hint) -->
-            <path d="M50 31 L53 34 L50 36" stroke="#d4a060" stroke-width="1.2" fill="none"/>
-            <!-- lips -->
-            <path d="M47 38 Q51 41 53 38" stroke="#c47020" stroke-width="1.4" fill="none"/>
-            <!-- chin beard -->
-            <path d="M42 40 L40 54 L46 54 L48 40 Z" fill="#e07d1a"/>
-            <line x1="41" y1="45" x2="47" y2="45" stroke="#c47020" stroke-width="1"/>
-            <line x1="40" y1="50" x2="47" y2="50" stroke="#c47020" stroke-width="1"/>
-            <!-- uraeus (white cobra on forehead) -->
-            <path d="M32 10 Q34 4 36 10 L36 14 Q34 15 32 14 Z" fill="white"/>
+        <div class="logo-img" style="background:white; padding:0; border-radius:4px;">
+          <svg viewBox="0 0 72 68" xmlns="http://www.w3.org/2000/svg" width="72" height="68">
+            <!-- === ГОРЫ === -->
+            <!-- левая гора (светло-серая) -->
+            <polygon points="0,62 17,13 36,62" fill="#c8c8c8"/>
+            <!-- правая гора (средне-серая) -->
+            <polygon points="36,62 56,15 74,62" fill="#909090"/>
+            <!-- центральная (тёмная, на переднем плане) -->
+            <polygon points="16,62 36,4 56,62" fill="#4a4a4a"/>
+            <!-- земля -->
+            <rect x="0" y="60" width="74" height="8" fill="white"/>
+
+            <!-- === ЭКСКАВАТОР (чёрный силуэт) === -->
+            <!-- гусеница -->
+            <rect x="1" y="52" width="34" height="8" rx="4" fill="#1a1a1a"/>
+            <rect x="3" y="50" width="30" height="6" rx="2" fill="#222"/>
+            <circle cx="5" cy="59" r="4" fill="#111"/>
+            <circle cx="5" cy="59" r="1.8" fill="#333"/>
+            <circle cx="30" cy="59" r="4" fill="#111"/>
+            <circle cx="30" cy="59" r="1.8" fill="#333"/>
+            <!-- корпус -->
+            <rect x="4" y="40" width="20" height="14" rx="2" fill="#1a1a1a"/>
+            <!-- кабина -->
+            <path d="M6 40 L6 31 L20 31 L23 40 Z" fill="#1a1a1a"/>
+            <!-- стекло кабины -->
+            <polygon points="8,33 8,39 19,39 21,39 21,33" fill="#2a2a2a"/>
+            <!-- противовес (зад) -->
+            <path d="M4 42 L0 42 L0 52 L4 52 Z" fill="#222"/>
+            <!-- стрела (главная, толстая) -->
+            <path d="M21 39 L46 21 L48 25 L23 43 Z" fill="#1a1a1a"/>
+            <!-- гидроцилиндр стрелы -->
+            <path d="M16 42 L38 27 L39 29 L17 44 Z" fill="#333"/>
+            <!-- рукоять -->
+            <path d="M46 21 L60 33 L58 36 L44 24 Z" fill="#1a1a1a"/>
+            <!-- ковш -->
+            <path d="M57 31 L68 31 L70 41 L55 41 Z" fill="#1a1a1a"/>
+            <!-- зубья ковша -->
+            <rect x="57" y="41" width="3" height="5" rx="1" fill="#1a1a1a"/>
+            <rect x="62" y="41" width="3" height="5" rx="1" fill="#1a1a1a"/>
+            <rect x="67" y="41" width="2.5" height="5" rx="1" fill="#1a1a1a"/>
           </svg>
         </div>
         <div class="logo-text-block">
@@ -1362,25 +1361,25 @@
     <div class="footer-grid">
       <div class="footer-col">
         <div class="footer-logo">
-          <div class="footer-logo-ico" style="background:none; padding:0;">
-            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-              <rect width="48" height="48" rx="6" fill="#1a1a1a"/>
-              <path d="M12 20 L24 7 L36 20 L36 26 L24 21 L12 26 Z" fill="#ff9c38"/>
-              <line x1="14" y1="13" x2="34" y2="13" stroke="#c47020" stroke-width="1"/>
-              <line x1="13" y1="17" x2="35" y2="17" stroke="#c47020" stroke-width="1"/>
-              <path d="M12 23 L9 42 L15 42 L19 27 Z" fill="#ff9c38"/>
-              <path d="M36 23 L39 42 L33 42 L29 27 Z" fill="#ff9c38"/>
-              <ellipse cx="24" cy="30" rx="10" ry="11" fill="#f5d5a0"/>
-              <path d="M13 25 Q18 22 22 25 Q18 28 13 25 Z" fill="#2a1800"/>
-              <ellipse cx="18" cy="24.5" rx="1.5" ry="1.3" fill="white"/>
-              <circle cx="18" cy="24.5" r="0.7" fill="#1a1a1a"/>
-              <path d="M26 25 Q30 22 35 25 Q30 28 26 25 Z" fill="#2a1800"/>
-              <ellipse cx="30" cy="24.5" rx="1.5" ry="1.3" fill="white"/>
-              <circle cx="30" cy="24.5" r="0.7" fill="#1a1a1a"/>
-              <path d="M22 31 Q24 34 26 31" stroke="#c4956a" stroke-width="1" fill="none"/>
-              <path d="M19 35 Q24 38 29 35" stroke="#a06040" stroke-width="1.3" fill="none"/>
-              <path d="M20 38 L19 46 L24 47 L29 46 L28 38 Z" fill="#ff9c38"/>
-              <path d="M22 7 Q24 4 26 7 L26 10 Q24 11 22 10 Z" fill="white"/>
+          <div class="footer-logo-ico" style="background:white; padding:0; border-radius:3px; width:48px; height:46px;">
+            <svg viewBox="0 0 72 68" xmlns="http://www.w3.org/2000/svg" width="48" height="46">
+              <polygon points="0,62 17,13 36,62" fill="#c8c8c8"/>
+              <polygon points="36,62 56,15 74,62" fill="#909090"/>
+              <polygon points="16,62 36,4 56,62" fill="#4a4a4a"/>
+              <rect x="0" y="60" width="74" height="8" fill="white"/>
+              <rect x="1" y="52" width="34" height="8" rx="4" fill="#1a1a1a"/>
+              <rect x="3" y="50" width="30" height="6" rx="2" fill="#222"/>
+              <circle cx="5" cy="59" r="4" fill="#111"/>
+              <circle cx="30" cy="59" r="4" fill="#111"/>
+              <rect x="4" y="40" width="20" height="14" rx="2" fill="#1a1a1a"/>
+              <path d="M6 40 L6 31 L20 31 L23 40 Z" fill="#1a1a1a"/>
+              <polygon points="8,33 8,39 19,39 21,33" fill="#2a2a2a"/>
+              <path d="M4 42 L0 42 L0 52 L4 52 Z" fill="#222"/>
+              <path d="M21 39 L46 21 L48 25 L23 43 Z" fill="#1a1a1a"/>
+              <path d="M46 21 L60 33 L58 36 L44 24 Z" fill="#1a1a1a"/>
+              <path d="M57 31 L68 31 L70 41 L55 41 Z" fill="#1a1a1a"/>
+              <rect x="57" y="41" width="3" height="5" rx="1" fill="#1a1a1a"/>
+              <rect x="62" y="41" width="3" height="5" rx="1" fill="#1a1a1a"/>
             </svg>
           </div>
           <div class="footer-logo-text">

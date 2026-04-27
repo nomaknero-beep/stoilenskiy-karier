@@ -1,0 +1,13 @@
+# Local Claude Code settings
+.claude/
+
+# Backups
+netlify_backup.html
+*.bak
+*.bak-*
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+desktop.ini
